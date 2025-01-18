@@ -9,7 +9,7 @@ public class CashFlowDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        var connectionString = "";
+        var connectionString = "Server=localhost;Database=cashflowdb;Uid=root;Pwd=rootpassword;";
         var serverVersion = new MySqlServerVersion(new Version(9, 1, 0));
 
         optionsBuilder.UseMySql(connectionString, serverVersion);
