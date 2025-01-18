@@ -8,8 +8,6 @@ public static class DependecyInjectionExtension
 {
     public static void AddInfrastructure(this IServiceCollection services)
     {
-
-
         services.AddScoped<IExpensesRepository, ExpensesRepository>();
 
     }
