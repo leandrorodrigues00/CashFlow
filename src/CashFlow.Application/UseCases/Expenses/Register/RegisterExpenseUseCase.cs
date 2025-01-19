@@ -25,19 +25,12 @@ public class RegisterExpenseUseCase : IRegisterExpenseUseCase
     {
         Validate(request);
 
-        var entity = new Expense
-        {
-            Amount = request.Amount,
-            Date = request.Date,
-            Description = request.Description,
-            Title = request.Title,
-            PaymentType = (Domain.Enums.PaymentType)request.PaymentType,
-        };
+        var entity = _mapper.Map<Expense>(request);
 
         await _repository.Add(entity);
         await _unitOfWork.Commit();
 
-        return new ResponseRegisteredExpenseJson();
+        return _mapper.Map<ResponseRegisteredExpenseJson>(entity);
     }
 
     private void Validate(RequestRegisterExpenseJson request)
