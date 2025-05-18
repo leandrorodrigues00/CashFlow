@@ -33,7 +33,7 @@ This **API**, built with **.NET 8**, adopts **Domain-Driven Design (DDD)** princ
 
 ## 💻 Getting Started
 
-### Prerequisites
+### Requirements
 
 - .NET 8 SDK  
 - MySQL Server  
