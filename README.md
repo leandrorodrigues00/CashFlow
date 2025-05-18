@@ -12,8 +12,7 @@
 
 ## 👩‍💻 About the project
 
-This **API**, built with **.NET 8**, adopts **Domain-Driven Design (DDD)** principles to provide a structured solution for personal expense management. Users can register expenses with details like title, date, description, amount, and payment type (securely stored in **MySQL**), and generate PDF/Excel reports for financial analysis. The RESTful architecture uses standard HTTP methods and includes interactive **Swagger** documentation. Key packages: **AutoMapper** (object mapping), **FluentValidation** (request validation), **FluentAssertions** (unit tests), and **Entity Framework** (ORM).
-
+This **API**, built with **.NET 8**, adopts **Domain-Driven Design (DDD)** principles to provide a structured solution for personal expense management. Users can register expenses with details like title, date, description, amount, and payment type (securely stored in **MySQL**), and generate PDF/Excel reports for financial analysis. The RESTful architecture uses standard HTTP methods and includes interactive **Swagger** documentation.
 ## 🚀 Technologies
 
 * [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
