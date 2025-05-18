@@ -5,6 +5,7 @@ namespace CashFlow.Api.Middleware;
 public class CultureMiddleware
 {
     private readonly RequestDelegate _next;
+
     public CultureMiddleware(RequestDelegate next)
     {
         _next = next;
@@ -18,8 +19,7 @@ public class CultureMiddleware
 
         var cultureInfo = new CultureInfo("en");
 
-
-        if (string.IsNullOrWhiteSpace(requestedCulture) == false
+        if(string.IsNullOrWhiteSpace(requestedCulture) == false
             && supportedLanguages.Exists(language => language.Name.Equals(requestedCulture)))
         {
             cultureInfo = new CultureInfo(requestedCulture);

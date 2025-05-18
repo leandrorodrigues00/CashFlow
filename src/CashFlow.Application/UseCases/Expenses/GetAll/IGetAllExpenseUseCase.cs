@@ -5,6 +5,3 @@ public interface IGetAllExpenseUseCase
 {
     Task<ResponseExpensesJson> Execute();
 }
-
-
-
